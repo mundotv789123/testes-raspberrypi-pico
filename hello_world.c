@@ -20,7 +20,7 @@ int main() {
 
     add_alarm_in_ms(500, blink_callback, NULL, true);
     while (true) {
-        printf("Hello, world! 2\n");
+        printf("Hello, world!\n");
         sleep_ms(1000);
     }
 
