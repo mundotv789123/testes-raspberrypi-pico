@@ -10,13 +10,13 @@ project(my_project)
 pico_sdk_init()
 
 # rest of your project
-
 add_executable(hello_world
     hello_world.c
 )
 
 # Add pico_stdlib library which aggregates commonly used features
-target_link_libraries(hello_world pico_stdlib)
+#target_link_libraries(hello_world pico_stdlib)
+target_link_libraries(hello_world pico_stdlib hardware_pwm pico_multicore)
 
 # enable usb output, disable uart output
 pico_enable_stdio_usb(hello_world 1)
